@@ -9,8 +9,8 @@ $(document).ready(function () {
 
     // вопросы
     $(".faq_item").click(function () {
-        $('.faq_item').not(this).removeClass('active').children('.faq_item_content').slideUp("ease-out")
-        $(this).toggleClass("active").children(".faq_item_content").slideToggle("ease-out")
+        $('.faq_item').not(this).removeClass('active').children('.faq_item_content').slideUp()
+        $(this).toggleClass("active").children(".faq_item_content").slideToggle()
     })
 
     // скролл к секции
