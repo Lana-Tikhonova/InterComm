@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.menu_btn').on('click', function () {
         $('.header').toggleClass('active');
         $(this).toggleClass('active');
-        $('body').toggleClass('locked');
+        $('html').toggleClass('locked');
     })
 
     // вопросы
@@ -20,7 +20,7 @@ $(document).ready(function () {
         if ($(this)[0].closest('.mobile_menu')) {
             $('.header').removeClass('active');
             $('.menu_btn').removeClass('active');
-            $('body').removeClass('locked');
+            $('html').removeClass('locked');
         }
         $("html, body").animate({
             scrollTop: $(href).offset().top

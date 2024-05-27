@@ -76,6 +76,9 @@ html {
 	overflow-x: hidden;
 	overflow-y: auto;
 	scroll-behavior: smooth;
+	&.locked {
+		overflow: hidden;
+	}
 }
 
 body {
@@ -90,10 +93,6 @@ body {
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
-
-	&.locked {
-		overflow: hidden;
-	}
 }
 
 h1,
@@ -515,7 +514,6 @@ ul {
 
 .head {
 	position: relative;
-	min-height: 880px;
 
 	.video {
 		position: absolute;
@@ -1812,7 +1810,7 @@ ul {
 		}
 	}
 	.line span {
-		background-size: cover;
+		background-size: contain;
 	}
 
 	.place_section .text {

@@ -65,6 +65,9 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+html.locked {
+  overflow: hidden;
+}
 
 body {
   font: normal normal 18px "Montserrat", Arial, Helvetica, sans-serif;
@@ -78,9 +81,6 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-}
-body.locked {
-  overflow: hidden;
 }
 
 h1,
@@ -457,7 +457,6 @@ ul {
 
 .head {
   position: relative;
-  min-height: 880px;
 }
 .head .video {
   position: absolute;
@@ -1567,7 +1566,7 @@ ul {
     right: 300px;
   }
   .line span {
-    background-size: cover;
+    background-size: contain;
   }
   .place_section .text {
     font-size: 24px;
