@@ -1,0 +1,30 @@
+<svg width="363" height="363" viewBox="0 0 363 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dddf_556_1826)">
+<path d="M290.024 258.856C245.185 318.884 160.172 331.197 100.144 286.358C40.1157 241.518 27.8027 156.506 72.6422 96.4775C117.482 36.4491 202.494 24.1361 262.522 68.9756C309.717 104.228 327.418 164.313 311.039 217.565" stroke="white" stroke-width="3"/>
+</g>
+<defs>
+<filter id="filter0_dddf_556_1826" x="0.15625" y="0.491699" width="362.352" height="362.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="22"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.941176 0 0 0 0 0.188235 0 0 0 0 0.356863 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_556_1826"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="22"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.941176 0 0 0 0 0.188235 0 0 0 0 0.356863 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_556_1826" result="effect2_dropShadow_556_1826"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="22"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.941176 0 0 0 0 0.188235 0 0 0 0 0.356863 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect2_dropShadow_556_1826" result="effect3_dropShadow_556_1826"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_556_1826" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect4_foregroundBlur_556_1826"/>
+</filter>
+</defs>
+</svg>
