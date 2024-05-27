@@ -81,7 +81,10 @@ $(document).ready(function () {
         scrollY: {
             translateX: [
                 ["elInY", "elOutY"],
-                [0, 400]
+                {
+                    500: [0, 300],
+                    993: [0, 400]
+                }
             ]
         },
     })
@@ -89,17 +92,20 @@ $(document).ready(function () {
         scrollY: {
             translateX: [
                 ["elInY", "elOutY"],
-                [0, -400]
+                {
+                    500: [0, -300],
+                    993: [0, -400]
+                }
             ]
         },
     })
 
-        var scene = document.querySelectorAll('.parallax');
-        if (scene) {
-            scene.forEach(element => {
-                var parallaxInstance = new Parallax(element)
-            });
-        }
+    var scene = document.querySelectorAll('.parallax');
+    if (scene) {
+        scene.forEach(element => {
+            var parallaxInstance = new Parallax(element)
+        });
+    }
 
     // анимация
     let offset

@@ -1282,16 +1282,16 @@ ul {
   margin: -100px 0;
 }
 .line_section .line {
-  height: 90px;
+  height: 37px;
 }
 .line_section .line.white span {
-  background-image: url(../imgs/line/line_white.svg);
+  background-image: url(../imgs/line/line_white-37.svg);
 }
 .line_section .line.black span {
-  background-image: url(../imgs/line/line_black.svg);
+  background-image: url(../imgs/line/line_black-37.svg);
 }
 .line_section .line.pink span {
-  background-image: url(../imgs/line/line_pink.svg);
+  background-image: url(../imgs/line/line_pink-37.svg);
 }
 .line_section .line:nth-child(1) {
   top: 64%;
@@ -1322,21 +1322,89 @@ ul {
   transform: translateX(-50%) rotate(15.4deg);
 }
 
+@media screen and (min-width: 577px) {
+  .line_section .line {
+    height: 60px;
+  }
+  .line_section .line.white span {
+    background-image: url(../imgs/line/line_white-60.svg);
+  }
+  .line_section .line.black span {
+    background-image: url(../imgs/line/line_black-60.svg);
+  }
+  .line_section .line.pink span {
+    background-image: url(../imgs/line/line_pink-60.svg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .line_block .line {
+    height: 114px;
+  }
+  .line_block .line.white span {
+    background-image: url(../imgs/line/line_white_date-60.svg);
+  }
+  .line_block .line.black span {
+    background-image: url(../imgs/line/line_black_date-60.svg);
+  }
+  .line_block .line.pink span {
+    background-image: url(../imgs/line/line_pink_date-60.svg);
+  }
+}
+@media screen and (min-width: 993px) {
+  .line_section .line {
+    height: 90px;
+  }
+  .line_section .line.white span {
+    background-image: url(../imgs/line/line_white-90.svg);
+  }
+  .line_section .line.black span {
+    background-image: url(../imgs/line/line_black-90.svg);
+  }
+  .line_section .line.pink span {
+    background-image: url(../imgs/line/line_pink-90.svg);
+  }
+  .line_block .line {
+    height: 114px;
+  }
+  .line_block .line.white span {
+    background-image: url(../imgs/line/line_white_date-90.svg);
+  }
+  .line_block .line.black span {
+    background-image: url(../imgs/line/line_black_date-90.svg);
+  }
+  .line_block .line.pink span {
+    background-image: url(../imgs/line/line_pink_date-90.svg);
+  }
+}
+@media screen and (min-width: 1201px) {
+  .line_block .line {
+    height: 114px;
+  }
+  .line_block .line.white span {
+    background-image: url(../imgs/line/line_white_date-114.svg);
+  }
+  .line_block .line.black span {
+    background-image: url(../imgs/line/line_black_date-114.svg);
+  }
+  .line_block .line.pink span {
+    background-image: url(../imgs/line/line_pink_date-114.svg);
+  }
+}
 .line_block {
   height: 404px;
   position: relative;
 }
 .line_block .line {
-  height: 114px;
+  height: 34px;
 }
 .line_block .line.white span {
-  background-image: url(../imgs/line/line_white_date.svg);
+  background-image: url(../imgs/line/line_white_date-34.svg);
 }
 .line_block .line.black span {
-  background-image: url(../imgs/line/line_black_date.svg);
+  background-image: url(../imgs/line/line_black_date-34.svg);
 }
 .line_block .line.pink span {
-  background-image: url(../imgs/line/line_pink_date.svg);
+  background-image: url(../imgs/line/line_pink_date-34.svg);
 }
 .line_block .line:nth-child(1) {
   top: 27%;
@@ -1511,9 +1579,6 @@ ul {
   .expo_section {
     margin-bottom: 100px;
   }
-  .line_block .line {
-    height: 90px;
-  }
   .organizers_item {
     padding: 30px;
   }
@@ -1565,9 +1630,6 @@ ul {
   .thesis_section .img_bg_2 {
     right: 300px;
   }
-  .line span {
-    background-size: contain;
-  }
   .place_section .text {
     font-size: 24px;
   }
@@ -1581,9 +1643,6 @@ ul {
   }
   .line_block {
     height: 340px;
-  }
-  .line_block .line {
-    height: 60px;
   }
   .location_block.top {
     top: -75px;
@@ -1623,9 +1682,6 @@ ul {
   .heroes_item {
     padding: 70px 20px 30px;
     font-size: 18px;
-  }
-  .line_section .line {
-    height: 60px;
   }
   .line_section {
     height: 500px;
@@ -1767,9 +1823,6 @@ ul {
     height: 200px;
     margin-top: 67px;
     margin-bottom: 55px;
-  }
-  .line_block .line {
-    height: 34px;
   }
   .line_block .line:nth-child(1) {
     transform: translateX(-50%) rotate(-15.29deg);
@@ -2017,9 +2070,6 @@ ul {
   }
   .line_section {
     height: 376px;
-  }
-  .line_section .line {
-    height: 37px;
   }
   .industries_list {
     row-gap: 10px;
