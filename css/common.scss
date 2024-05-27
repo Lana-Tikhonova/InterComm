@@ -545,7 +545,17 @@ ul {
 		pointer-events: none;
 	}
 }
-
+@media screen and (min-width:1920px){
+	.head {
+		position: relative;
+	
+		.video {
+			right: initial;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 1920px;
+		}}
+}
 .head_block {
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -604,18 +614,21 @@ ul {
 		position: absolute;
 
 		&_1 {
-			top: 19px;
-			right: 179px;
+			top: -144px;
+			right: 78px;
 			width: 573px;
 			height: 620px;
 		}
 
 		&_2 {
-			bottom: 10px;
-			right: 453px;
+			top: 417px;
+			right: 368px;
 			width: 203px;
 			height: 213px;
 		}
+	}
+	.container{
+		position: relative;
 	}
 }
 
@@ -886,19 +899,18 @@ ul {
 	max-width: 87%;
 }
 
-.faq_section {}
-
 .ticket_section {
-	padding: 200px 0;
+	padding: 300px 0;
 	position: relative;
-	margin-top: -100px;
+	margin-top: -198px;
+	margin-bottom: -47px;
 	overflow: hidden;
 
 	.bg {
 		position: absolute;
-		top: -22px;
+		top: 50%;
 		left: 50%;
-		transform: rotate(0.2deg) translateX(-50%);
+		transform: rotate(0.2deg) translate(-50%,-50%);
 		max-width: initial;
 	}
 }
@@ -1004,7 +1016,6 @@ ul {
 
 .expo_section {
 	position: relative;
-	margin-top: 56px;
 	margin-bottom: 150px;
 }
 
@@ -1339,22 +1350,22 @@ ul {
 	position: relative;
 	overflow: hidden;
 
-	&:before {
-		pointer-events: none;
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: -166px;
-		right: -160px;
-		width: 447px;
-		height: 447px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../imgs/18+.svg)
-	}
-
 	.container {
 		max-width: 1460px;
+		position: relative;
+		&:before {
+			pointer-events: none;
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -228px;
+			right: -160px;
+			width: 447px;
+			height: 447px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url(../imgs/18+.svg)
+		}
 	}
 
 	.btn {
@@ -1496,6 +1507,66 @@ ul {
 		}
 	}
 }
+.line_block {
+	height: 404px;
+	position: relative;
+
+	.line {
+		height: 34px;
+
+		&.white {
+			span {
+				background-image: url(../imgs/line/line_white_date-34.svg);
+			}
+		}
+
+		&.black {
+			span {
+				background-image: url(../imgs/line/line_black_date-34.svg);
+			}
+		}
+
+		&.pink {
+			span {
+				background-image: url(../imgs/line/line_pink_date-34.svg);
+			}
+		}
+
+		&:nth-child(1) {
+			top: 27%;
+			transform: translateX(-50%) rotate(-12.58deg);
+		}
+
+		&:nth-child(2) {
+			top: 49%;
+			transform: translateX(-50%) rotate(-3.24deg);
+		}
+
+		&:nth-child(3) {
+			top: 16%;
+			transform: translateX(-50%) rotate(6.34deg);
+		}
+	}
+}
+
+.line {
+	width: 200%;
+	position: absolute;
+	left: 50%;
+
+	span {
+		background-position: center left;
+		display: block;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.45);
+		background-repeat: repeat-x;
+	}
+
+	img {
+		max-width: initial;
+	}
+}
 @media screen and (min-width:577px) {
 	.line_section {
 		.line {
@@ -1619,67 +1690,6 @@ ul {
 		}
 	}
 }
-.line_block {
-	height: 404px;
-	position: relative;
-
-	.line {
-		height: 34px;
-
-		&.white {
-			span {
-				background-image: url(../imgs/line/line_white_date-34.svg);
-			}
-		}
-
-		&.black {
-			span {
-				background-image: url(../imgs/line/line_black_date-34.svg);
-			}
-		}
-
-		&.pink {
-			span {
-				background-image: url(../imgs/line/line_pink_date-34.svg);
-			}
-		}
-
-		&:nth-child(1) {
-			top: 27%;
-			transform: translateX(-50%) rotate(-12.58deg);
-		}
-
-		&:nth-child(2) {
-			top: 49%;
-			transform: translateX(-50%) rotate(-3.24deg);
-		}
-
-		&:nth-child(3) {
-			top: 16%;
-			transform: translateX(-50%) rotate(6.34deg);
-		}
-	}
-}
-
-.line {
-	width: 200%;
-	position: absolute;
-	left: 50%;
-
-	span {
-		background-position: center left;
-		display: block;
-		width: 100%;
-		height: 100%;
-		box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.45);
-		background-repeat: repeat-x;
-	}
-
-	img {
-		max-width: initial;
-	}
-}
-
 .location_block {
 	position: absolute;
 
@@ -1918,12 +1928,13 @@ ul {
 		.img_bg {
 			&_1 {
 				right: 50px;
-				top: 40px;
+				top: -60px;
 				width: 400px;
 				height: 400px;
 			}
 
 			&_2 {
+				top: 230px;
 				right: 300px;
 			}
 		}
@@ -1940,9 +1951,18 @@ ul {
 			}
 		}
 	}
+	.ticket_section{margin-top: -150px;}
 }
 
 @media screen and (max-width:992px) {
+	.ticket_section{
+		padding: 200px 0;
+		margin-top: -100px;
+		margin-bottom: 0;
+		.bg{
+			transform: rotate(0.2deg) translateX(-50%);
+		}
+	}
 	.whom_item {
 		max-width: 480px;
 	}
@@ -2046,7 +2066,6 @@ ul {
 	}
 
 	.expo_section {
-		margin-top: 0;
 		margin-bottom: 0;
 		padding-top: 0;
 	}
@@ -2732,10 +2751,11 @@ ul {
 				border-bottom: 1px solid rgb(255 255 255 / 60%);
 			}
 		}
-
-		&:before {
-			bottom: initial;
-			top: -170px;
+		.container{
+			&:before {
+				bottom: initial;
+				top: -190px;
+			}
 		}
 
 		.text {
