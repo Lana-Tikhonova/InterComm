@@ -170,6 +170,11 @@ ul {
     max-width: 1260px;
   }
 }
+.container_separator {
+  max-width: 1920px;
+  padding: 0;
+}
+
 .plyr__control--overlaid {
   border-radius: 16px;
   border-radius: 54px;
@@ -715,7 +720,6 @@ ul {
 .search_list {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   margin-left: -10px;
   margin-right: -10px;
   position: relative;
@@ -744,10 +748,10 @@ ul {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  justify-content: center;
 }
 
 .search_item {
-  height: 100%;
   padding: 30px;
   min-height: 162px;
   border-radius: 40px;
@@ -821,6 +825,9 @@ ul {
   margin-top: -38px;
   max-width: 87%;
 }
+.faq_item_content a {
+  color: #FA0056;
+}
 
 .ticket_section {
   padding: 300px 0;
@@ -885,7 +892,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px -30px 0;
+  margin: 20px -30px 48px;
   width: 200%;
 }
 .ticket_block .left .btn {
@@ -898,6 +905,9 @@ ul {
   margin-top: auto;
 }
 .ticket_block .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 30px 40px;
   margin: 0;
   margin-left: 23px;
@@ -1442,7 +1452,7 @@ ul {
     background-image: url(../imgs/line/line_pink-90.svg);
   }
   .line_block .line {
-    height: 114px;
+    height: 90px;
   }
   .line_block .line.white span {
     background-image: url(../imgs/line/line_white_date-90.svg);
@@ -1753,6 +1763,9 @@ ul {
   }
   .ticket_block .left .btn {
     margin-top: 50px;
+  }
+  .ticket_block .left .price {
+    margin-bottom: 0;
   }
   .ticket_section .bg {
     height: 80%;
@@ -2311,4 +2324,8 @@ ul {
   .whom_slider .swiper-slide {
     width: 100%;
   }
+}
+#faq {
+  position: relative;
+  z-index: 1;
 }
