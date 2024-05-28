@@ -56,13 +56,41 @@
         const MARKER_COORDINATES = [55.763537, 37.654005];
 
         // Объект с параметрами центра и зумом карты
-        const LOCATION = {center: CENTER_COORDINATES, zoom: 14};
+        const LOCATION = {center: CENTER_COORDINATES, zoom: 12};
 
         // Создание объекта карты
         map = new YMap(document.getElementById('map'), {location: LOCATION});
 
         // Добавление слоев на карту
-        map.addChild(scheme = new YMapDefaultSchemeLayer());
+        const layer = new YMapDefaultSchemeLayer({
+  customization: [
+    // Делаем прозрачными все геометрии водных объектов.
+    {
+      tags: {
+        all: ['water']
+      },
+      elements: 'geometry',
+      stylers: [
+        {
+          opacity: 0
+        }
+      ]
+    },
+    // Меняем цвет подписей для всех POI и узлов сети общественного транспорта.
+    {
+      tags: {
+        any: ['poi', 'transit_location']
+      },
+      elements: 'label.text.fill',
+      stylers: [
+        {
+          color: '#0000DD'
+        }
+      ]
+    }
+  ]
+});
+map.addChild(layer);
         map.addChild(new YMapDefaultFeaturesLayer());
 
         // Добавление элементов управления на карту
@@ -97,9 +125,7 @@
         // Добавление маркера на карту
         map.addChild(new YMapMarker({coordinates: MARKER_COORDINATES}, imgContainer));
         }
-        map.addChild(new YMapDefaultSchemeLayer({
-        theme: "dark", customization: 'customization.json'
-    }));
+        
     </script>
 </head>
 
@@ -637,7 +663,7 @@
                     </div>
                 </div>
                 <h2 data-aos="fade-in">Место встречи</h2>
-                <div id="map" style="width: 600px; height: 400px"></div>
+                <div id="map"></div>
             </div>
             <div class='line_block'>
                 <div class='line white left'> <span></span></div>
