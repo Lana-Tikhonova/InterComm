@@ -1367,6 +1367,7 @@ ul {
 .line_block {
   height: 404px;
   position: relative;
+  margin-top: -88px;
 }
 .line_block .line {
   height: 34px;
@@ -1426,7 +1427,7 @@ ul {
 }
 @media screen and (min-width: 769px) {
   .line_block .line {
-    height: 114px;
+    height: 60px;
   }
   .line_block .line.white span {
     background-image: url(../imgs/line/line_white_date-60.svg);
@@ -1488,10 +1489,10 @@ ul {
   height: 286px;
 }
 .location_block.bottom {
-  top: -118px;
-  right: -36px;
-  width: 266px;
-  height: 308px;
+  top: -66px;
+  right: -13px;
+  width: 272px;
+  height: 194px;
 }
 
 .location {
@@ -1509,12 +1510,6 @@ ul {
   right: 0;
   height: auto;
 }
-.location_3 {
-  top: 0;
-  left: 18%;
-  height: auto;
-  width: 64%;
-}
 .location_4 {
   bottom: 0;
   left: 0;
@@ -1522,7 +1517,7 @@ ul {
   width: 54%;
 }
 .location_5 {
-  bottom: 10%;
+  top: 0;
   right: 0;
   height: auto;
   width: 54%;
@@ -1537,13 +1532,29 @@ ul {
 }
 .place_section h2 {
   text-align: center;
+  margin-bottom: 44px;
 }
 .place_section .text {
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 140%; /* 47.6px */
+  letter-spacing: -0.34px;
+  margin-bottom: 44px;
+}
+
+#faq {
+  position: relative;
+  z-index: 1;
+}
+
+#map {
+  border-radius: 40px;
+  width: 100%;
+  height: 491px;
+  background: #FA0056;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1300px) {
@@ -1555,10 +1566,6 @@ ul {
   }
 }
 @media screen and (max-width: 1200px) {
-  .location_block.bottom {
-    right: -17px;
-    width: 249px;
-  }
   .lightning_block.top {
     left: 35%;
   }
@@ -1684,6 +1691,12 @@ ul {
   }
 }
 @media screen and (max-width: 992px) {
+  .place_section h2 {
+    margin-bottom: 30px;
+  }
+  .place_section .text {
+    margin-bottom: 30px;
+  }
   .ticket_section {
     padding: 200px 0;
     margin-top: -100px;
@@ -1705,8 +1718,7 @@ ul {
     height: 262px;
   }
   .location_block.bottom {
-    width: 220px;
-    height: 260px;
+    top: -80px;
   }
   .header_row .menu,
   .header_row .btn {
@@ -1875,10 +1887,13 @@ ul {
   }
 }
 @media screen and (max-width: 768px) {
+  .place_section {
+    padding-top: 90px !important;
+  }
   .line_block {
     height: 200px;
-    margin-top: 67px;
-    margin-bottom: 55px;
+    margin-top: -100px;
+    margin-bottom: -27px;
   }
   .line_block .line:nth-child(1) {
     transform: translateX(-50%) rotate(-15.29deg);
@@ -1892,16 +1907,22 @@ ul {
     transform: translateX(-50%) rotate(3.63deg);
   }
   .location_block.top {
-    top: 55px;
-    left: 20px;
-    width: 134px;
-    height: 166px;
+    top: -92px;
+    left: 9px;
+    width: 117px;
+    height: 156px;
+  }
+  #map {
+    border-radius: 22px;
   }
   .location_block.bottom {
-    width: 135px;
-    height: 154px;
-    right: 12px;
-    top: -162px;
+    width: 141px;
+    height: 105px;
+    right: 15px;
+    top: -54px;
+  }
+  .location_4 {
+    left: 25px;
   }
   .place_section .text {
     font-size: 18px;
@@ -2041,6 +2062,16 @@ ul {
   }
 }
 @media screen and (max-width: 576px) {
+  #map {
+    height: 272px;
+  }
+  .place_section .text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.16px;
+  }
   .separator {
     height: 10px;
   }
@@ -2324,15 +2355,4 @@ ul {
   .whom_slider .swiper-slide {
     width: 100%;
   }
-}
-#faq {
-  position: relative;
-  z-index: 1;
-}
-
-#map {
-  border-radius: 40px;
-  width: 100%;
-  height: 491px;
-  background: red;
 }
