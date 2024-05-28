@@ -121,5 +121,4 @@ $(document).ready(function () {
         duration: 800,
         offset: offset,
     });
-
 });
