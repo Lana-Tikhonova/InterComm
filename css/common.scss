@@ -2873,3 +2873,37 @@ letter-spacing: -0.16px;
 		}
 	}
 }
+.marker_wrapper{
+	width: auto;
+	margin-top: -85px;
+	margin-left: -52px;
+	display: flex;align-items: center;
+	min-width: 100px;
+	position: relative;
+  }
+  .my-marker{
+	width: 100px;height: auto;
+	flex:0 0 auto;
+  cursor: pointer;
+  }
+  .marker-title{
+	flex:0 0 auto;
+	white-space: nowrap;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 90%;
+  }
+  @media screen and (max-width:576px){
+	.marker_wrapper{
+	  flex-direction: column;
+	}
+	.marker-title{
+	  top: 85%;
+	  left: 50%;
+	  transform: translateX(-50%);
+	}
+  }
+  .line_block{
+	pointer-events: none;
+  }

@@ -25,31 +25,10 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="vendors/animate/aos.min.css">
     <link rel="stylesheet" href="vendors/plyr/plyr.css">
-    <link rel="stylesheet" href="css/common.css?6">
+    <link rel="stylesheet" href="css/common.css?7">
 
     <script src="https://api-maps.yandex.ru/3.0/?apikey=4c7e2233-a854-4da5-9483-7a55bd41dfc3&lang=ru_RU" type="text/javascript"></script>
-    <script>
-async function initMap() {
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-
-    const map = new YMap(
-        document.getElementById('app'),
-        {
-            location: {
-                center: [55.763537, 37.654005],
-                zoom: 14
-            }
-        }
-    );
-
-    map.addChild(new YMapDefaultSchemeLayer());
-}
-
-initMap();
-        
-    </script>
+    <script src="js/map.js?1" type="text/javascript"></script>
 </head>
 
 <body class='page_home'>
@@ -61,8 +40,8 @@ initMap();
                 </a>
                 <nav class='menu'>
                     <ul>
-                        <li><a href="#prize" data-scroll>Премия</a></li>
-                        <li><a href="#media" data-scroll>Медиа</a></li>
+                        <li><a href="https://vnutricom.ru" target="_blank">Премия</a></li>
+                        <li><a href="https://vnutricom.ru/media/" target="_blank">Медиа</a></li>
                         <li><a href="#program" data-scroll>Программа</a></li>
                         <li><a href="#faq" data-scroll>FAQ</a></li>
                         <li><a href="#partners" data-scroll>Партнерам</a></li>
@@ -75,8 +54,8 @@ initMap();
             <div class='mobile_menu'>
                 <nav class='menu'>
                     <ul>
-                        <li><a href="#prize" data-scroll>Премия</a></li>
-                        <li><a href="#media" data-scroll>Медиа</a></li>
+                        <li><a href="https://vnutricom.ru" target="_blank">Премия</a></li>
+                        <li><a href="https://vnutricom.ru/media/" target="_blank">Медиа</a></li>
                         <li><a href="#program" data-scroll>Программа</a></li>
                         <li><a href="#faq" data-scroll>FAQ</a></li>
                         <li><a href="#partners" data-scroll>Партнерам</a></li>
@@ -269,7 +248,7 @@ initMap();
             <div class='line black left'> <span></span></div>
             <div class='line white right'> <span></span></div>
         </section>
-        <section class='section industries_section'>
+        <section class='section industries_section' id="program">
             <div class="container">
                 <h2 data-aos="fade-in">Актуальные инструменты и&nbsp;практики по отраслям</h2>
                 <div class='industries_list'>
@@ -587,7 +566,7 @@ initMap();
                 </div>
                 <h2 data-aos="fade-in">Место встречи</h2>
                 <div class='text' data-aos="fade-up">г. Москва, ул. Покровка, д. 47</div>
-                <div id="map"></div>
+                <div class='map_wrapper' data-aos="fade-up"><div id="map"></div></div>
             </div>
             <div class='line_block'>
                 <div class='line white left'> <span></span></div>
@@ -823,7 +802,7 @@ initMap();
         <div class='container container_separator'>
             <div class='separator' data-aos="fade-in"></div>
         </div>
-        <section class='section'>
+        <section class='section' id="partners">
             <div class="container">
                 <h2 data-aos="fade-in">Партнеры </h2>
                 <div class='partners_list'>
