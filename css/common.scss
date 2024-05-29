@@ -184,12 +184,14 @@ ul {
 		padding: 0 30px;
 		max-width: 1260px;
 	}
-	
+
 }
-.container_separator{
+
+.container_separator {
 	max-width: 1920px;
 	padding: 0;
 }
+
 //plyr
 .plyr__control--overlaid {
 	border-radius: 16px;
@@ -841,7 +843,8 @@ ul {
 	padding-right: 10px;
 	display: flex;
 	flex-direction: column;
-	row-gap: 20px;justify-content: center;
+	row-gap: 20px;
+	justify-content: center;
 }
 
 .search_item {
@@ -924,8 +927,9 @@ ul {
 	padding: 0 30px 30px;
 	margin-top: -38px;
 	max-width: 87%;
-	a{
-		color:$color_pink;
+
+	a {
+		color: $color_pink;
 	}
 }
 
@@ -1010,7 +1014,9 @@ ul {
 	}
 
 	.right {
-		display: flex;flex-direction: column;justify-content: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		padding: 30px 40px;
 		margin: 0;
 		margin-left: 23px;
@@ -1543,7 +1549,7 @@ ul {
 .line_block {
 	height: 404px;
 	position: relative;
-margin-top: -88px;
+	margin-top: -88px;
 
 	.line {
 		height: 34px;
@@ -1741,10 +1747,10 @@ margin-top: -88px;
 	}
 
 	&.bottom {
-	    top: -66px;
-    right: -13px;
-    width: 272px;
-    height: 194px;
+		top: -66px;
+		right: -13px;
+		width: 272px;
+		height: 194px;
 	}
 }
 
@@ -1794,25 +1800,30 @@ margin-top: -88px;
 	}
 
 	.text {
-text-align: center;
+		text-align: center;
 		font-size: 34px;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 140%; /* 47.6px */
+		line-height: 140%;
+		/* 47.6px */
 		letter-spacing: -0.34px;
 		margin-bottom: 44px;
 	}
 }
-#faq{
-	position: relative;z-index: 1;
+
+#faq {
+	position: relative;
+	z-index: 1;
 }
-#map{
+
+#map {
 	border-radius: 40px;
 	width: 100%;
 	height: 491px;
-	background:$color_pink;
+	background: $color_pink;
 	overflow: hidden;
 }
+
 @media screen and (max-width:1300px) {
 	.search_list {
 		.img_bg {
@@ -1998,14 +2009,16 @@ text-align: center;
 }
 
 @media screen and (max-width:992px) {
-	.place_section{
-		h2{
+	.place_section {
+		h2 {
 			margin-bottom: 30px;
 		}
-		.text{
+
+		.text {
 			margin-bottom: 30px;
 		}
 	}
+
 	.ticket_section {
 		padding: 200px 0;
 		margin-top: -100px;
@@ -2030,9 +2043,11 @@ text-align: center;
 		width: 210px;
 		height: 262px;
 	}
-	.location_block.bottom{
+
+	.location_block.bottom {
 		top: -80px;
 	}
+
 	.header_row {
 
 		.menu,
@@ -2107,9 +2122,11 @@ text-align: center;
 	.ticket_block .left .btn {
 		margin-top: 50px;
 	}
-	.ticket_block .left .price{
+
+	.ticket_block .left .price {
 		margin-bottom: 0;
 	}
+
 	.ticket_section {
 		.bg {
 			height: 80%;
@@ -2249,9 +2266,10 @@ text-align: center;
 }
 
 @media screen and (max-width:768px) {
-	.place_section{
+	.place_section {
 		padding-top: 90px !important;
 	}
+
 	.line_block {
 		height: 200px;
 		margin-top: -100px;
@@ -2276,23 +2294,26 @@ text-align: center;
 
 	.location_block.top {
 		top: -92px;
-    left: 9px;
-    width: 117px;
-    height: 156px;
+		left: 9px;
+		width: 117px;
+		height: 156px;
 	}
-	#map{
-		border-radius:22px;
+
+	#map {
+		border-radius: 22px;
 	}
 
 	.location_block.bottom {
-	    width: 141px;
-    height: 105px;
-    right: 15px;
-    top: -54px;
+		width: 141px;
+		height: 105px;
+		right: 15px;
+		top: -54px;
 	}
-	.location_4{
+
+	.location_4 {
 		left: 25px;
 	}
+
 	.place_section .text {
 		font-size: 18px;
 	}
@@ -2479,18 +2500,21 @@ text-align: center;
 }
 
 @media screen and (max-width:576px) {
-	#map{
+	#map {
 		height: 272px;
 	}
-	.place_section{
-		.text{
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 22.4px */
-letter-spacing: -0.16px;
+
+	.place_section {
+		.text {
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 140%;
+			/* 22.4px */
+			letter-spacing: -0.16px;
 		}
 	}
+
 	.separator {
 		height: 10px;
 	}
@@ -2873,37 +2897,45 @@ letter-spacing: -0.16px;
 		}
 	}
 }
-.marker_wrapper{
+
+.marker_wrapper {
 	width: auto;
 	margin-top: -85px;
 	margin-left: -52px;
-	display: flex;align-items: center;
+	display: flex;
+	align-items: center;
 	min-width: 100px;
 	position: relative;
-  }
-  .my-marker{
-	width: 100px;height: auto;
-	flex:0 0 auto;
-  cursor: pointer;
-  }
-  .marker-title{
-	flex:0 0 auto;
+}
+
+.my-marker {
+	width: 100px;
+	height: auto;
+	flex: 0 0 auto;
+	cursor: pointer;
+}
+
+.marker-title {
+	flex: 0 0 auto;
 	white-space: nowrap;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 90%;
-  }
-  @media screen and (max-width:576px){
-	.marker_wrapper{
-	  flex-direction: column;
+}
+
+@media screen and (max-width:576px) {
+	.marker_wrapper {
+		flex-direction: column;
 	}
-	.marker-title{
-	  top: 85%;
-	  left: 50%;
-	  transform: translateX(-50%);
+
+	.marker-title {
+		top: 85%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
-  }
-  .line_block{
+}
+
+.line_block {
 	pointer-events: none;
-  }
+}
